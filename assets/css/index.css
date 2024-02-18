@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Climate+Crisis&family=Golos+Text:wght@400;500&family=Kaushan+Script&family=Lobster&family=Noto+Sans+JP:wght@100&family=Open+Sans&family=Orbitron&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+:root {
+  --san: 'Open Sans', sans-serif;
+}
+
+/* Navbar Start -----------------------------------------------------------------------------*/
+.navbar .nav-item:hover {
+  color: #ed1651;
+}
+
+/* Online Enquery button Start*/
+
+.btn-fill {
+  padding: 25px 10px;
+  margin: 0px auto;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  line-height: 10%;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  border-radius: 3PX;
+  background-color: #ed1651;
+  overflow: hidden;
+  font-size: 14px;
+  border: 1px solid #dd0941;
+}
+
+.btn-fill:before {
+  background-color: rgb(0, 0, 0);
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 110%;
+  bottom: 0%;
+  left: -2%;
+  z-index: -1;
+  height: 550%;
+  transition: all .73s ease-out;
+  border-radius: 50%;
+  transform: translate(-50%, -50);
+}
+
+.btn-fill:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btn-fill:hover::before {
+  top: -250%;
+}
+
+.btn-fill::after {
+  content: 'absolute';
+  position: absolute;
+  text-align: center;
+  align-self: flex-start;
+  width: 105%;
+  height: 550%;
+  background-color: rgb(0, 0, 0);
+  top: -550%;
+  left: -2%;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all .73s ease-out;
+}
+
+.btn-fill:hover:after {
+  top: -250%;
+}
+
+/* Online Equery button End */
+/* --------------------------------------------------------------------- */
+/* Navbar Side Menu Start */
+
+#sidebarContainer {
+  margin-top: -50px;
+}
+
+#sideMenu {
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  width: 400px;
+  margin-top: -1px;
+  padding-top: 50px;
+  transform: translateX(400px);
+  transition: transform .5s ease-in-out;
+  z-index: 10;
+  background-color: rgba(217, 236, 236, 0.975);
+}
+
+input[type="checkbox"]:checked~#sideMenu {
+  transform: translateX(0);
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+
+}
+
+.sideIconToggle {
+  transition: all 0.3s;
+
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 10%;
+  width: 27px;
+  top: 33px;
+  right: 30px;
+
+}
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 2px;
+  width: 150%;
+  background-color: #f08d8d;
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin: 10px 0px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: translateY(-15px) rotate(-45deg);
+  margin-top: -9px;
+}
+
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Navbar Side Menu End */
+
+
+.collapse .navbar-nav ul li a,
+#sideMenu .dropdown-menu ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: 450;
+  font-size: 15px;
+  position: relative;
+  transition: left 1s ease-in;
+}
+
+.collapse .navbar-nav .dropdown-menu,
+#sideMenu .dropdown-menu {
+  width: 200px;
+  transition-duration: 1s;
+}
+
+.collapse .navbar-nav .dropdown-menu .dropdown-item,
+#sideMenu .dropdown-menu .dropdown-item {
+  width: 200px;
+}
+
+.collapse .navbar-nav .dropdown ul li a:hover {
+  color: #dd0941;
+  left: 20px;
+  background-color: rgba(209, 178, 178, 0);
+}
+
+.collapse .navbar-nav .dropdown-item:hover::before {
+  background-color: #dd0941;
+  content: '';
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: -10px;
+  top: 15px;
+}
+
+#sideMenu .list a {
+  color: #000000;
+}
+
+#sideMenu .list a:hover {
+  color: #dd0941;
+}
+
+/* Navbar Side Menu End */
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Navbar End ----------------------------------------------------------------------------------------------*/
+
+/* Slider Start --------------------------------------------------------------------------------------------*/
+
+.slide-container {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.slide-content {
+  margin: 0px 15px;
+}
+
+.card {
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  border: 12px solid rgba(255, 255, 255, 0.322);
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+
+
+.swiper-navBtn {
+  color: #000000;
+  transition: color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+  background-color: #ffffff9f;
+}
+
+.swiper-button-next {
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev {
+  left: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000000;
+  opacity: 1;
+}
+
+/* Slider End --------------------------------------------------------------------------------------------*/
+
+/* Video Start---------------------------------------------------------------------------------------------- */
+.video {
+  position: relative;
+}
+
+.video-thumbnail span {
+
+  position: absolute;
+  display: block;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dd0941;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  padding: 13px 23px;
+  border-radius: 50%;
+  outline-offset: 10px;
+  transition: all 0.5s;
+  animation: sun-rise 2s infinite;
+}
+
+.video-thumbnail span:hover {
+  color: #ff0044;
+  background-color: white;
+
+}
+
+
+/* Video End ------------------------------------------------------------------------------------------------ */
+/* Two Slider Start--------------------------------------------------------------------------------------------------- */
+.col-lg-6 .slide-container {
+  width: 43vw;
+  height: 100%;
+  position: relative;
+
+}
+
+.col-lg-6 .slide-content {
+  border-radius: 25px;
+}
+
+.col-lg-6 .cards {
+  width: 100%;
+  border: px solid red;
+}
+
+.col-lg-6 .button {
+  border: 0px solid black;
+  font-size: 100%;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: 4.5vw;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.col-lg-6 .button:hover {
+  background: #0044ff;
+  color: #dd0941;
+}
+
+.col-lg-6 .swiper-navBtn {
+  color: #dd0941;
+  transition: color 0.3s ease;
+  background-color: rgba(0, 255, 255, 0);
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.col-lg-6 .swiper-navBtn:hover {
+  color: #ffffff;
+  background-color: #dd0941;
+  transition: all 0.5s;
+}
+
+.col-lg-6 .swiper-next {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+}
+
+.col-lg-6 .swiper-prev {
+  position: absolute;
+  right: 32%;
+  top: 10px;
+}
+
+/* small slider start*/
+.swap-2 .slide-container {
+  width: 45vw;
+  height: 100%;
+  position: relative;
+
+}
+
+.swap-2 .slide-content {
+  border-radius: 25px;
+}
+
+.swap-2 .cards {
+  width: 100%;
+  border: px solid red;
+}
+
+.swap-2 .button {
+  border: 0px solid black;
+  font-size: 100%;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: 4.5vw;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.swap-2 .button:hover {
+  background: #0044ff;
+  color: #dd0941;
+}
+
+.swap-2 .swiper-navBtn {
+  color: #dd0941;
+  transition: color 0.3s ease;
+  background-color: rgba(0, 255, 255, 0);
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.swap-2 .swiper-navBtn:hover {
+  color: #ffffff;
+  background-color: #dd0941;
+  transition: all 0.5s;
+}
+
+.swap-2 .swiper-next {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+}
+
+.swap-2 .swiper-prev {
+  position: absolute;
+  right: 30%;
+  top: 10px;
+}
+
+/* small slider end */
+@media screen and (max-width: 768px) {
+  .swap-2 .slide-content {
+    margin: 0 10px;
+  }
+}
+
+/* Two SLider End ------------------------------------------------------------------------------------------------------*/
+
+/* varma-primes start --------------------------------------------------------------------------------------------------*/
+
+.varma-primes-img {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  top: -30px;
+  height: 110px;
+  width: 276px;
+
+}
+
+.varma-primes {
+  height: 200px;
+}
+
+.box .li::after {
+  content: '';
+  top: 26px;
+  display: flex;
+  background-color: #000000;
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  margin-left: -45px;
+
+}
+
+.box li h5 {
+  color: #ed1651;
+}
+
+/* varma-primes end --------------------------------------------------------------------------------------------------*/
+
+/* <!-- NEWS AND BLOGS Start ------------------------------------------------------------------------------------=----------> */
+.news {
+  margin-top: 100px;
+}
+
+/* -- NEWS AND BLOGS Start ------------------------------------------------------------------------------------=----------> */
+
+.ctx {
+  background-image: url(/assets/img/find-your-home.png);
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.footer .links li,
+h6 {
+  padding-bottom: 10px;
+}
+
+.social-media .icon {
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+.social-media .icon:hover {
+  background-color: red;
+  color: white;
+  animation: iconsAnime 1s ease;
+}
+
+@keyframes iconsAnime {
+  0% {
+
+    opacity: 1;
+
+  }
+
+  25% {
+
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+
+  75% {
+
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+
+    transform: scale(1);
+    opacity: 0.1;
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .ctx h1 {
+    font-size: 14px;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: rgb(0, 45, 59);
+  }
+
+  .news .btn-fill {
+    display: none;
+  }
+
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .col-lg-6 .slide-container {
+    width: 450px;
+    height: 100%;
+    position: relative;
+
+  }
+
+  .col-lg-6 .button {
+    border: 0px solid black;
+    font-size: 100%;
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+    right: 10vw;
+    z-index: 10;
+  }
+
+  .ctx {
+    background-image: url(/assets/img/find-your-home.png);
+    background-size: cover;
+    text-align: right;
+    font-size: 10px;
+  }
+
+  .ctx h1 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: rgba(113, 91, 148, 0);
+  }
+
+
+
+  #rightSide #call {
+    padding-top: 20px;
+  }
+
+  #sidebarContainer {
+    display: none;
+  }
+
+  .box .li::after {
+    display: none;
+  }
+}
+
+
+/* project start---------------------------------------------------------------------------------------------------------- */
+
+.projects {
+  background-image: url(/assets/img/sourcebg.jpg);
+  height: 35vh;
+  background-size: cover;
+
+}
+.gallery{
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0.6)),url(/assets/img/bg9.jpg);
+    height: 35vh;
+  background-size: cover;
+}
+
+.projects::before {
+  content: '';
+  width: 100vw;
+  margin-left: -11px;
+  height: 35vh;
+  position: absolute;
+  background: linear-gradient(40deg, #dd2626, #009fff);
+  mix-blend-mode: multiply;
+}
+
+.projects h2,
+.gallery h2 {
+  position: absolute;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  top: 30%;
+  left: 100px;
+  z-index: 1;
+}
+
+.pro-img {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.fig-cap {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+}
+
+.pro-img .inner {
+
+  transition: all 1s;
+  position: relative;
+  transform: scale(1);
+}
+
+.pro-img .inner:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.pro-img .inner:hover::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.568);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.pro-img .inner .fill{
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.pro-img .inner:hover .fill {
+  visibility: visible;
+}
+/* project end---------------------------------------------------------------------------------------------------------- */
+
+/* about us start----------------------------------------------------------------------------------------------------------- */
+.aboutus{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* for ribin on cardds-------------------------- */
+/* .cards{
+  position: relative;
+}
+.cards::before{
+  content: "sold out";
+  color: #000000;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  clip-path: polygon(0 30%, 100% 30%, 60% 45%, 100% 65%, 0 65%);
+  } */
+  
+
+.text .more-text{
+  display: none;
+}
+.text.more-text-sho .more-text{
+  display: block;
+}
+/* about us end----------------------------------------------------------------------------------------------------------- */
+
+.images .container .col-lg-3{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 2.2rem;
+  transition: all 0.5s;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; 
+}
+.images .container .col-lg-3 img{
+  width: 17rem;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s; 
+}
+.images .container .col-lg-3:hover::before{
+  content: '';
+  position: absolute;
+  background-color: #00000052;
+  width: 17rem;
+  height: 12.2rem;
+  border-radius: 6px;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s linear  !important;
+}
+.images .container .col-lg-3 .h5{
+  position: absolute;
+  bottom: 1rem;
+  width: 17rem;
+}

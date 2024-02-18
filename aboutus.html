@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light  py-4 " id="indexup">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/img/logo.svg" width="101" height="45"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- bbb -->
+                    <li class="nav-item dropdown pe-3">
+                        <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu mt-lg-4 rounded-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item bg-transparent" href="kochi.html">Kochi</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Trivandrum.html">Trivandrum</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Thrissure.html">Thrissure</a></li>
+                        </ul>
+                    </li>
+                    <!-- bbb -->
+                    <li class="nav-item dropdown pe-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu mt-lg-4 rounded-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item bg-transparent" href="kochi.html">Company Profile </a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Trivandrum.html">Varma Care</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Thrissure.html">Testimonial</a></li>
+                        </ul>
+                    </li>
+                    <!-- bbb -->
+                    <li class="nav-item pe-3 ">
+                        <a class="nav-link " aria-current="page" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item pe-3 ">
+                        <a class="nav-link " aria-current="page" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!--  -->
+                <div class="d-lg-flex align-items-center" id="rightSide">
+                    <!--  -->
+                    <div class="pe-4">
+                        <!-- Button trigger modal -->
+                        <div data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="./assets/icons/whatsapp-svgrepo-com.svg" width="35" height="35">
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header py-4">
+                                        <h5 class="modal-title mx-auto" id="staticBackdropLabel"><img
+                                                src="./assets/icons/whatsapp-svgrepo-com.svg" width="35" height="35"
+                                                alt=""></h5>
+                                    </div>
+                                    <div class="modal-body mx-auto">
+                                        <h2 class="mx-auto">Chat with Varma Homes?</h2>
+                                        <h6 class="px-5 pt-3 text-muted">Click OK to continue with WhatsApp!!</h6>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Cancle</button>
+                                        <button type="button" class="btn btn-danger">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="pe-3" id="call">
+                        <div class="btn-group">
+                            <div class="dropdown " data-bs-toggle="dropdown" data-bs-display="static"
+                                aria-expanded="false">
+                                <img src="./assets/icons/phone-5971.svg" width="38" height="38" alt="">
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-lg-end mt-4 rounded-0">
+
+                                <li><a href="tel:+91 9645 88 33 33" class="dropdown-item pt-3">tel:+91 9645 88 33 33</a>
+                                </li>
+                                <li><a href="tel:+971 521 254 110" class="dropdown-item pt-3">UAE: +971 521 254 110</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="pe-5">
+                        <div class="fill">
+                            <div class="btn-fill">
+                                <span>Online Enquery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <div class="sidebarContainer pe-3">
+
+                            <div id="sidebarContainer">
+                                <input type="checkbox" class="openSideMenu" id="openSideMenu">
+
+                                <label for="openSideMenu" class="sideIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+
+                                <div id="sideMenu">
+                                    <ul class="sideMenuInner list-unstyled ps-5 position-relative ">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown pt-4">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Projets
+                                            </a>
+                                            <ul class="dropdown-menu mt-lg-4 rounded-0"
+                                                aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item bg-transparent" href="kochi.html">Kochi</a>
+                                                </li>
+                                                <hr class="dropdown-divider">
+                                                <li><a class="dropdown-item" href="Trivandrum.html">Trivandrum</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="Thrissure.html">Thrissure</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown pt-4">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                About Us
+                                            </a>
+                                            <ul class="dropdown-menu mt-lg-4 rounded-0"
+                                                aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item bg-transparent" href="kochi.html">Company
+                                                        Profile </a></li>
+                                                <hr class="dropdown-divider">
+                                                <li><a class="dropdown-item" href="Trivandrum.html">Varma Care</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="Thrissure.html">Testimonial</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item pt-4">
+                                            <a class="nav-link " aria-current="page" href="#">Gallery</a>
+                                        </li>
+                                        <li class="nav-item pt-4">
+                                            <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list ps-5 pt-5 list-unstyled ">
+                                        <li class="pt-2"><a href="">News</a></li>
+                                        <li class="pt-2"><a href="">Blogs</a></li>
+                                        <li class="pt-2"><a href="">Joint Venture Enquiry</a></li>
+                                        <li class="pt-2"><a href="">Careers</a></li>
+                                        <li class="pt-2"><a href="">Media Center</a></li>
+                                        <li class="pt-2"><a href="">Emi Calculator</a></li>
+                                        <li class="pt-2"><a href="">Refer And Earn</a></li>
+                                    </ul>
+                                    <div class="ps-5 mt-5 pt-5">
+                                        <div class="pe-5">
+                                            <div class="fill">
+                                                <div class="btn-fill">
+                                                    <span>Online Enquery</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-5" style="background-color:rgba(226, 226, 226, 0.555);">
+        <div class="container ">
+            <h2 class="fw-bold text-start pb-4">Flats in Kochi - The Most Trusted Builders in Kochi</h2>
+            <p class="fs-6 text-start text-secondary"> Conceiving the amazing architectural designs and building the
+                dream home, Varma Homes have changed the shape of the realty segment in Kerala. With the smart designs
+                and the mastery in construction, Varma Homes have laid a novel dimension toward delivering the best
+                flats in Kochi being the best builders in Kerala. We listen to your demands for the residential
+                apartments for Sale in Kochi, amenities and facilities to help you with a wide range of apartments in
+                and around the city. With the trending demand And craving of investors to capitalize on quality-styled
+                apartments, we craft our residential projects to give your dream Flat In Ernakulam with a blend of all
+                modern and traditional comforts. In addition to the boom in the realty market, Varma Homes realize the
+                potential of matching your dreams with the best destination to invest in Kochi, the economic capital of
+                Kerala. </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="aboutus py-5">
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/gardenia-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Gardenia </span> <br> 2.5/3/4 BHK Luxury Apartments |
+                            Upcoming Project</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Kaloor, Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Pre Launch Offer*</span><br>
+                            Limited Time Offer</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            Contact for more details</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail pre launch offer</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>For more
+                            details Call +91 9645 88 33 33</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/142/2023</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/crystal-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Crystal </span> <br> 2.5/3/4 BHK Luxury Apartments |
+                            New Launch</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Tripunithura,
+                            Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> New Launch Offer*</span><br>
+                            Limited Time Offer</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1079 - 1724 Sq. Ft.</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail pre launch offer</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>The best
+                            ever living experience</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/103/2023</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/symphony-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Symphony </span> <br> 2.5/3/4 BHK Luxury Apartments |
+                            New Launch</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Edappally, Kochi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> New Launch Offer*</span><br>
+                            Limited Time Offer</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1436 - 1961 Sq. Ft.</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail pre launch offer</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>An ideal
+                            home for your family to live</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/113/2023</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/ficus-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Ficus </span> <br> 2.5/3/4 BHK Luxury Apartments |
+                            Work in Progress</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Palarivattom,
+                            Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Pre Launch Offer*</span><br>
+                            Only for few units</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1164 - 1654 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>At the
+                            prime locality of Alinchuvadu</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail special launch offer</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/073/2023</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/harmony-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Harmony </span> <br> 2.5/3/4 BHK Luxury Apartments |
+                            Work in Progress</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Edappally, Kochi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Pre Launch Offer*</span><br>
+                            Only for few units</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1074 - 1771 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Location of
+                            socio-economic prominence and connectivity</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail special launch offer</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/028/2023</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/1.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Urban Heights </span> <br> 3/4 BHK Luxury Apartments | New
+                            Launch
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Kadavanthra, Kochi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Pre Launch Offer*</span><br>
+                            Limited Time Offer</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1803 - 2968 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>An urban
+                            heaven of style and elegance</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail special offer</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/136/2022</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/rhythm-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Rhythm </span> <br> 2/3 BHK Luxury Apartments | New Launch
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Eroor, Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Pre Launch Offer*</span><br>
+                            Only for few units</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1160 - 1565 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Taste
+                            luxury at its finest</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail special offer</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/117/2022</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/imperial-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Imperial </span> <br>2/3 BHK Luxury Apartments | Work in
+                            Progress
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Vazhakkala, Kochi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Contact Now</span><br>
+                            for the price details</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            915 - 1476 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Own your
+                            dream home in Kochi</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book early
+                            to avail special offers</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/058/2021</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/northlight-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma North Light</span> <br> 2/3 BHK Luxury Apartments | Work in
+                            Progress
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Vadakkekotta,
+                            Tripunithura, Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Contact Now</span><br>
+                            for the price details</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1050 - 1408 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Just 300
+                            meters from Vadakkekotta Metro Station</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Book now to
+                            avail special offer</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/ERN/021/2021</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/prime-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Prime </span> <br>2/3 BHK Luxury Apartments | Work in
+                            Progress
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Near Vyttila
+                            Mobility Hub, Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Contact Now</span><br>
+                            for the price details</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            1074 - 1605 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Just 1 km
+                            from Vyttila Mobility Hub</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Model
+                            Apartment Ready. Schedule Your Site Visit Now.</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/364/2020</p>
+                </div>
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/bougain-apartments-in-kochi.jpg" class="img-fluid" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Bougain Heights Purple</span> <br> 2/3 BHK Compact
+                            Apartments | Ready to Occupy
+
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>Chottanikkara,
+                            Kochi</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Contact Now</span><br>
+                            for the price details</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            983 - 1333 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Own now
+                            with 0% GST</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>See touch
+                            and experience the model apartment</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/093/2020</p>
+                </div>
+
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/padipura-apartments-in-cochin.jpg" class="img-fluid path" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Padipura</span> <br> 2/3 BHK Luxury Apartments | Completed
+                            Ahead of Schedule
+
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i> Statue Junction,
+                            Tripunithura</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Units:</span><br>
+                            31 Units:</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            983 - 1333 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Close to
+                            Sree Poornathrayeesa Temple</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Luxury
+                            amenities including rooftop swimming pool</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/045/2021</p>
+                </div>
+
+            </div>
+            <div class="cards border-0 rounded-0">
+                <img src="./assets/img/aboutus/maalika-1-apartments-in-cochin.jpg" class="img-fluid path" alt="...">
+                <div class="px-3" style="background-color:rgba(226, 226, 226, 0.555);">
+                    <div class="sub-cards pt-3">
+                        <p><span class="fw-bold fs-5">Varma Maalika Block II</span> <br> 2/3 BHK Luxury Apartments |
+                            Completed Ahead of Schedule
+
+                        </p>
+                        <p><i class="fa-solid fa-location-dot" style="color: rgb(212, 100, 100);"></i>S.N Junction,
+                            Tripunithura</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <p class="border-end pe-3"> <span class=" fw-bold "> Units:</span><br>
+                            8 Units:</p>
+                        <hr>
+                        <p class=" ps-3"> <span class=" ps-3 fw-bold ">Super Built-Up Area:</span><br>
+                            983 - 1333 Sq. Ft</p>
+                    </div>
+                    <div class="contact">
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>Own now
+                            with 0% GST</p>
+                        <p><i class="fa-regular fa-circle-check pe-2" style="color: rgb(212, 100, 100);"></i>See touch
+                            and experience the model apartment</p>
+                    </div>
+                    <div class="btn-card d-flex gap-5">
+                        <div class="fill">
+                            <div class="btn-fill bg-white">
+                                <span><a href="#" class="text-danger text-danger ">View details</a></span>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="btn-fill ">
+                                <span><a href="#" class="text-danger text-white ">Quick inquery</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-4">RERA Registration Number: K-RERA/PRJ/093/2020</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:rgba(226, 226, 226, 0.555);">
+        <div class="container py-5">
+            <div class="text">
+                <h5 class="fw-bold ">Buy Flats and Apartments in Kochi at Prime Locations</h5>
+                <p class="fs-6">Luxury flats in Kochi are the dream of anyone who moves to or stays in the city. With a
+                    plethora of options in choosing the Flats for sale in Ernakulam, we at Varma Homes offer you 2 bhk
+                    flats
+                    for sale, 3 BHK flats, and 4 BHK apartments in Kochi at competitive rates. Being a large metropolis
+                    and
+                    a hub of opportunity, the city welcomes home buyers towards Kochi apartments with the credible
+                    builders.
+                    <br><br>
+                    Varma Homes considers every homebuyer as a core part of the journeys ahead. Besides owning trendy,
+                    strong, and stylish residential apartments, you can also experience the comfort of living with the
+                    best
+                    amenities at the prime destinations with flats in Kadavanthra, Palarivattom, Edappally and
+                    Tripunithura.
+
+                    <div class="more-text"><br><br>
+                        Varma Homes add to your vision of elite lifestyle with every detail fulfilled toward your dream
+                        property in Kochi for sale. With promising apartments in Cochin, flats in Thrissur and
+                        Trivandrum,
+                        we open doors to let you enjoy the essence of signature luxury. Let it be commercial spaces,
+                        leisure, education, career, retail, hospitality or entertainment—explore everything you can
+                        think of
+                        with our premium apartments in Kochi.
+                        <h5 class="fw-bold row-gap-3 ">2/3 BHK Apartments & Flats in Kochi for Sale</h5>
+                        <p>Kochi is rich for its rich culture, heritage, history, aesthetic beauty, and comfortable
+                            lifestyle that lets people crave to move to its heart to lead an amazing life. Being one of
+                            the
+                            best-visited locations in South India, Kochi also holds the sixth position in the list of
+                            most
+                            preferred real estate destinations in the country. Kochi is the true choice of millennials
+                            for
+                            luxury flats in Kerala due to the rapid growth of this tier-two city and the flooding of
+                            career
+                            opportunities. <br><br>
+                            At Kochi, one can witness the smart city tag with phenomenal development in infrastructure,
+                            IT
+                            fields, employment generation, and most importantly, metro rail connectivity. Additionally,
+                            the
+                            successful development of the port at the Airport terminal, facilitating International
+                            connectivity, has driven the tourism and foreign investment development in Cochin. <br><br>
+                            The real estate segment in Kochi has been flourishing recently, which has made a surge in
+                            home
+                            buyers choosing the place for housing needs. Being the leading builders in Kochi, Varma
+                            Homes
+                            have realized the need for the best flats in Kochi and Ready To Occupy Apartments In Kochi
+                            with
+                            all the necessary amenities to live and work in your comfort. <br><br>
+                            With greatly connected rail, road network, International Air Terminal, and metro projects,
+                            Kochi
+                            has established beneficial connections with domestic and International destinations across
+                            the
+                            world. In addition to Kochi, we also offer new flats for sale in Trivandrum and Thrissur for
+                            your comfiest lifestyle.
+                        </p>
+                        <h5 class="fw-bold row-gap-3 ">Own Luxury Flats from the Most Trusted Builders in Kochi</h5>
+                        <p>The enthralling backwaters are a major attraction that makes Ernakulam the favorite choice of
+                            people for a serene living experience. Many villas, apartments, and flats are available at
+                            Cochin at affordable rates. However, enjoying the best amenities, and facilities, living in
+                            the
+                            coveted destination with excellent connectivity isn't something everyone can offer.<br><br>
+
+                            Cochin is the best part of God's own country, with a metro life assured, making your career
+                            and
+                            personal life ideal to settle down. Earmarked as the in-demand destination for IT companies
+                            and
+                            startups, Kochi is always in the limelight for luxury houses in Kerala. Many people get well
+                            placed in Kochi and shift with the growing career openings, infrastructure development, and
+                            educational opportunities. This has made Kochi the ideal place to live and invest among the
+                            places in Kerala.<br><br>
+
+                            In a fast-growing city like Kochi, investing in a building project of Varma Homes while
+                            looking
+                            for New Flats For Sale In Ernakulam can be the most significant asset that gives you a great
+                            return on investment in the future.
+                        </p>
+                        <h5 class="fw-bold row-gap-3 "> Why Invest in flats for sale in Kochi?</h5>
+                        <p>If you’re searching to buy New Flats For Sale In Cochin, the city is bestowed with luxury
+                            flats
+                            in Kochi, splendid culture and tremendously growing connectivity, with the ideal blend of
+                            modern
+                            lifestyle.<br><br>
+
+                            Varma Homes is one of the leading builders in Kochi with a focus on the rise of city life
+                            with
+                            strategic development in the real estate sector. Through the development of exclusive
+                            housing
+                            projects, we offer luxury Ready To Occupy Flats In Cochin that meet the increased demands of
+                            the
+                            housing segment.<br><br>
+
+                            Located in the prime locations of Kochi, these housing projects are equipped with
+                            global-rated
+                            amenities. Let it be your requirement for luxury apartments, a flat in Ernakulam, or compact
+                            apartments for sale in Kochi, our projects stay ahead of the curve in the market to fulfill
+                            the
+                            desire of every homebuyer.</p>
+                        <h5 class="fw-bold row-gap-3 ">Why Varma Homes for Flats for Sale in Ernakulam?</h5>
+                        <p>With in-depth expertise in building and providing flats and Luxury apartments in Kochi, Varma
+                            Homes have touched the hearts of buyers. With assets that portray high value for your money
+                            and
+                            build a promise of quality that never fades, our luxury and compact 2 BHK and 3 BHK flats in
+                            Kochi give you the comfort of living in premium locations.<br><br>
+
+                            Our super luxury Flats for sale in Kochi are accessible to you at the most in-demand
+                            locations
+                            of the city. Being the most trusted builders in Kerala with RERA-registered projects at your
+                            convenience, we offer premium Apartments In Ernakulam with excellent life in Kochi.</p>
+                        <h5 class="fw-bold row-gap-3 "> Ready To Occupy Flats In Kochi</h5>
+                        <p>Experience the perfect home living with Varma Homes, the most credible builders in Kerala. We
+                            are
+                            committed to delivering the most advanced, sustainable, and top-quality luxury apartments
+                            for
+                            sale in Kochi. Being customer-centric, we travel the extra mile to mold happy and satisfied
+                            customers, employees, trade partners, and stakeholders alike through delivering promising
+                            apartments in Kerala.<br><br>
+
+                            Get the most fun-filled and peaceful life with Flats in Ernakulam which also offers a
+                            variety of
+                            choices from where you can pick the ideal flat or apartment based on your wish. Experience
+                            the
+                            ideal 2/3 BHK ready-to-occupy apartments in Kochi with 2 levels of premium car parking and
+                            special amenities at your reach. Check out our completed and ongoing projects, upcoming
+                            flats in
+                            Kochi, and luxury projects in coveted locations for blissful living.</p>
+                    </div>
+                    <div class="btn-for-more btn px-3 py-2 rounded-0  bg-danger">
+                                  Read More
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Swiper JS -->
+  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <!--Uncomment this line-->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/swiper.js"></script>
+</body>
+
+</html>
